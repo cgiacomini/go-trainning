@@ -1,0 +1,7 @@
+go env -w GO111MODULE=off
+GO111MODULE=off forces Go to behave the GOPATH way, even outside of GOPATH
+
+
+This is fine for basic use, but the built-in Go testing package has two major limitations:
+* It only provides a simple XUnit style of tests
+* It does not provide a library for assertions
